@@ -1,7 +1,6 @@
 streamlit
-Pinecone
-ServerlessSpec
-SentenceTransformer
+pinecone-client
+sentence-transformers
 openai
-load_dotenv
-os
+python-dotenv
+
