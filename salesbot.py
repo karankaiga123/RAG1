@@ -16,7 +16,7 @@ import os
 # Initialize Pinecone, Sentence-BERT, and OpenAI
 pc = Pinecone(api_key=st.secrets["PC_API"])
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-openai.api_key = st.secrets["OPENAI_API']
+openai.api_key = st.secrets["OPENAI_API"]
 index = pc.Index("salesdata")
 
 # Streamlit app layout
