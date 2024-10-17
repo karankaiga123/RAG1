@@ -12,12 +12,6 @@ import openai
 from dotenv import load_dotenv
 import os
 
-# Define the working directory
-working_directory = 'C:/Users/karan/OneDrive/Documents/Projects/RAG Bot'
-
-# Change the working directory
-os.chdir(working_directory)
-
 
 # Initialize Pinecone, Sentence-BERT, and OpenAI
 pc = Pinecone(api_key=os.getenv('PC_API'))
