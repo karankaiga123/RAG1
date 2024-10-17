@@ -1,0 +1,7 @@
+streamlit
+Pinecone
+ServerlessSpec
+SentenceTransformer
+openai
+load_dotenv
+os
