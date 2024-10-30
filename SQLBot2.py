@@ -137,6 +137,7 @@ st.write("Ask me anything about the sales data!")
 user_query = st.text_input("Your Question:")
 
 def generate_response(query_user):
+    pass
     return chain.invoke({"question": query_user})  
     
 
