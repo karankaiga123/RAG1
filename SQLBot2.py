@@ -21,11 +21,11 @@ from operator import itemgetter
 
 # Initialize
 if not os.environ.get("OPENAI_API_KEY"):
-    os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API')
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API"]
     
 # Comment out the below to opt-out of using LangSmith in this notebook. Not required.
 if not os.environ.get("LANGCHAIN_API_KEY"):
-    os.environ["LANGCHAIN_API_KEY"] = os.getenv('LANGCHAIN_API')
+    os.environ["LANGCHAIN_API_KEY"] = st.secrets["LANGCHAIN_API"]
     os.environ["LANGCHAIN_TRACING_V2"] = "true"
 
 #Initialise SQLlite
