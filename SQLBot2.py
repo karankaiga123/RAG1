@@ -29,7 +29,7 @@ if not os.environ.get("LANGCHAIN_API_KEY"):
     os.environ["LANGCHAIN_TRACING_V2"] = "true"
 
 #Initialise SQLlite
-df= pd.read_csv(r'\s1.csv')
+df= pd.read_csv('https://github.com/karankaiga123/RAG1/blob/main/s1.csv')
 
 # Inspect the first few rows of the DataFrame
 #print(df.head())
