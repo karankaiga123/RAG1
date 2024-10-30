@@ -59,6 +59,9 @@ df.rename(columns={
 conn = sqlite3.connect('example.db')
 c = conn.cursor()
 
+# Drop table if it exists 
+c.execute('DROP TABLE IF EXISTS sales_data')
+
 # Create table
 c.execute('''
 CREATE TABLE IF NOT EXISTS sales_data (
